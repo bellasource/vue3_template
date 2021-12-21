@@ -1,0 +1,11 @@
+/* 改变主题色变量 */
+$vxe-font-color: #333333;
+$vxe-table-font-color: $vxe-font-color;
+$vxe-primary-color: #657eff;
+$vxe-table-header-background-color: #e8ecff;
+$vxe-table-border-color: #e4e4e4;
+$vxe-table-row-striped-background-color: #fafafa;
+$vxe-table-row-hover-background-color: rgba(94, 93, 255, 0.05);
+$vxe-table-row-hover-striped-background-color: rgba(94, 93, 255, 0.05);
+
+@import 'vxe-table/styles/index.scss';

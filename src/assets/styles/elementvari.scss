@@ -1,0 +1,24 @@
+$colors: (
+'primary': (
+'base': #657eff,
+),
+'success': (
+'base': #73cc57,
+),
+'warning': (
+'base': #ffba00,
+),
+'danger': (
+'base': #ff4949,
+),
+'error': (
+'base': #db2828,
+),
+);
+
+@forward "~element-plus/theme-chalk/src/common/var.scss" with (
+$colors: $colors,
+$font-path: '~element-plus/dist/fonts'
+);
+
+@import '~element-plus/theme-chalk/src/index.scss';

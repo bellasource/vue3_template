@@ -1,0 +1,90 @@
+{
+  "name": "webpack5_vue3_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --progress --hot --config build/webpack.dev.js",
+    "build": "webpack --progress --config build/webpack.prod.js",
+    "prettier": "prettier -c --write \"{**/*,*}.{js,vue,less,sass,json,md}\"",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": [
+      "npm prettier",
+      "git add"
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "chrome 50",
+    "last 1 versions",
+    "ie 7",
+    "iOS 7"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "@vue/compiler-sfc": "^3.2.23",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.13.3",
+    "copy-webpack-plugin": "^9.0.1",
+    "core-js": "^3.18.2",
+    "css-loader": "^6.3.0",
+    "css-minimizer-webpack-plugin": "^3.1.1",
+    "eslint": "^8.0.0",
+    "eslint-config-alloy": "^4.3.0",
+    "eslint-plugin-vue": "^7.19.1",
+    "file-loader": "^6.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "less-loader": "^10.0.1",
+    "mini-css-extract-plugin": "^2.4.2",
+    "mocker-api": "^2.9.3",
+    "portfinder": "^1.0.28",
+    "postcss": "^8.3.9",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.2",
+    "sass-loader": "^10.2.0",
+    "style-loader": "^3.3.0",
+    "style-resources-loader": "^1.4.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "thread-loader": "^3.0.4",
+    "url-loader": "^4.1.1",
+    "vue-eslint-parser": "^7.11.0",
+    "vue-loader": "^16.8.1",
+    "webpack": "^5.58.0",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^4.3.1",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@antv/x6": "^1.28.1",
+    "@element-plus/icons": "0.0.11",
+    "axios": "^0.22.0",
+    "element-plus": "^1.1.0-beta.20",
+    "lodash": "^4.17.21",
+    "mockjs": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.20",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2",
+    "vxe-table": "^4.1.0",
+    "xe-utils": "^3.4.0"
+  }
+}

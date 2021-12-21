@@ -1,0 +1,6 @@
+# ESLint 忽略检查的文件和目录
+
+/dist/
+/node_modules/
+/static/
+src/assets/
